@@ -14,7 +14,6 @@
 
 [データ構造]
 1. グラフ理論の基礎
-2. 木構造の基礎
 2. Union-Find
     => UnionFind.java
 */
