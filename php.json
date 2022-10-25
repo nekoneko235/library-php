@@ -1,0 +1,58 @@
+{
+    "Input Array": {
+        "prefix": "arr",
+        "body": ["\\$${1:arr} = explode(\" \", trim(fgets(STDIN)));"],
+        "description": "競プロ:配列入力"
+    },
+    "Input List with 4 vars": {
+        "prefix": "list4",
+        "body": [
+            "list(\\$${1:a}, \\$${2:b}, \\$${3:c}, \\$${4:d}) = explode(\" \", trim(fgets(STDIN)));"
+        ],
+        "description": "競プロ:リスト入力"
+    },
+    "Input List with 3 vars": {
+        "prefix": "list3",
+        "body": [
+            "list(\\$${1:a}, \\$${2:b}, \\$${3:c}) = explode(\" \", trim(fgets(STDIN)));"
+        ],
+        "description": "競プロ:リスト入力"
+    },
+    "Input List with 2 vars": {
+        "prefix": "list2",
+        "body": [
+            "list(\\$${1:a}, \\$${2:b}) = explode(\" \", trim(fgets(STDIN)));"
+        ],
+        "description": "競プロ:リスト２入力"
+    },
+    "Input Variable": {
+        "prefix": "ivar",
+        "body": ["\\$${1:n} = trim(fgets(STDIN));"],
+        "description": "競プロ:変数入力"
+    },
+    "Max Integer": {
+        "prefix": "imax",
+        "body": ["PHP_INT_MAX"],
+        "description": "競プロ:最大値入力"
+    },
+    "Min Integer": {
+        "prefix": "imin",
+        "body": ["PHP_INT_MIN"],
+        "description": "競プロ:最小値入力"
+    },
+    "New Line": {
+        "prefix": "line",
+        "body": ["PHP_EOL"],
+        "description": "競プロ:改行"
+    },
+    "True Flag": {
+        "prefix": "tflag",
+        "body": ["\\$flag = true;"],
+        "description": "競プロ:TrueFlag"
+    },
+    "False Flag": {
+        "prefix": "fflag",
+        "body": ["\\$flag = false;"],
+        "description": "競プロ:FalseFlag"
+    }
+}
