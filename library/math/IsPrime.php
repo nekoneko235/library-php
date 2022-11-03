@@ -12,3 +12,8 @@ function isPrime($n): bool
     }
     return true;
 }
+
+print_r(isPrime(17));
+/*
+1
+*/

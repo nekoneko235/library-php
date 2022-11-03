@@ -1,6 +1,6 @@
 <?php
 
-function primeFactorization($n)
+function primeFactorization($n): array
 {
     $res = [];
     for ($i = 2; $i * $i <= $n; $i++) {
@@ -20,4 +20,51 @@ function primeFactorization($n)
     return $res;
 }
 
-echo print_r(primeFactorization(17));
+print_r(primeFactorization(24));
+/*
+arg: 1
+output:
+(
+)
+
+arg: 2
+output:
+Array
+(
+    [0] => Array
+        (
+            [0] => 2
+            [1] => 1
+        )
+)
+
+arg: 17
+output:
+Array
+(
+    [0] => Array
+        (
+            [0] => 17
+            [1] => 1
+        )
+
+)
+
+arg: 24
+output:
+Array
+(
+    [0] => Array
+        (
+            [0] => 2
+            [1] => 3
+        )
+
+    [1] => Array
+        (
+            [0] => 3
+            [1] => 1
+        )
+
+)
+*/

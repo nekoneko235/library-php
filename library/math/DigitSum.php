@@ -1,10 +1,10 @@
 <?php
 /*
  * Find the sum of the digits of a number
- * Time Complexity: O(n)
+ * Time Complexity: O(1)
  */
 
-function digitSum($n)
+function digitSum($n): int
 {
     $sum = 0;
     while ($n > 0) {
@@ -13,3 +13,8 @@ function digitSum($n)
     }
     return $sum;
 }
+
+print_r(digitSum(123456));
+/*
+21
+*/
