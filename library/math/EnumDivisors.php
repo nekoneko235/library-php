@@ -1,6 +1,6 @@
 <?php
 
-function enumDivisors($n)
+function enumDivisors($n): array
 {
     $res = [];
     for ($i = 1; $i * $i <= $n; $i++) {
@@ -17,4 +17,17 @@ function enumDivisors($n)
     return $res;
 }
 
-// echo print_r(enumDivisors(24));
+print_r(enumDivisors(777));
+/*
+Array
+(
+    [0] => 1
+    [1] => 3
+    [2] => 7
+    [3] => 21
+    [4] => 37
+    [5] => 111
+    [6] => 259
+    [7] => 777
+)
+*/
