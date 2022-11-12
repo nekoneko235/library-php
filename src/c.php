@@ -1,2 +1,3 @@
 <?php
-// Atcoder PHP7.4.4
+
+declare(strict_types=1);

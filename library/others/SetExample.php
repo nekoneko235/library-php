@@ -1,4 +1,7 @@
 <?php
+
+namespace library\others\set;
+
 // 集合を作成する場合、array_values(array_unique($arr))メソッドを使う
 // $arr = array_values(array_unique(explode(" ", trim(fgets(STDIN)))));
 $arr = [1, 2, 4, 2, 8, 9, 3, 5, 7, 9, 3];

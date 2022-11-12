@@ -1,5 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
+namespace library\math;
+
 /**
  * Permutation 順列 nPr (r ≦ n)
  *

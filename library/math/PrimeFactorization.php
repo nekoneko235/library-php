@@ -1,6 +1,10 @@
 <?php
 
-function primeFactorization($n): array
+declare(strict_types=1);
+
+namespace library\math;
+
+function primeFactorization(int $n): array
 {
     $res = [];
     for ($i = 2; $i * $i <= $n; $i++) {

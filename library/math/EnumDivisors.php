@@ -1,6 +1,10 @@
 <?php
 
-function enumDivisors($n): array
+declare(strict_types=1);
+
+namespace library\math;
+
+function enumDivisors(int $n): array
 {
     $res = [];
     for ($i = 1; $i * $i <= $n; $i++) {

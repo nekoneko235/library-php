@@ -1,5 +1,7 @@
 <?php
 
+namespace library\others\sort;
+
 $arr = [
     [2, "a", 1],
     [2, "r", 5],

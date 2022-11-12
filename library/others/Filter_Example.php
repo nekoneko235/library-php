@@ -1,5 +1,7 @@
 <?php
 
+namespace library\others\filter;
+
 // array_filter()の例
 function odd($n)
 {

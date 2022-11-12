@@ -1,5 +1,7 @@
 <?php
 
+namespace library\others\map;
+
 // array_map()の例
 function cube($n)
 {

@@ -1,10 +1,15 @@
 <?php
+
+declare(strict_types=1);
+
+namespace library\math;
+
 /*
  * Find the sum of the digits of a number
  * Time Complexity: O(1)
  */
 
-function digitSum($n): int
+function digitSum(int $n): int
 {
     $sum = 0;
     while ($n > 0) {
