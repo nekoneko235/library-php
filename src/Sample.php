@@ -1,11 +1,17 @@
 <?php
 
-declare(strict_types=1);
-
 class Sample
 {
-    public function hello()
+    public static function run(): never
     {
-        return "Hello";
+        exit((new self)->solver());
+    }
+
+    public function solver($io = STDIN): void
+    {
+        $a = trim(fgets($io));
+        echo $a + $a ** 2 + $a ** 3;
     }
 }
+
+Sample::run();
