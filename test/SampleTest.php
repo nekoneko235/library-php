@@ -13,29 +13,36 @@ class SampleTest extends TestCase
         SampleTest::$sample = new Sample();
     }
 
-    public function test_Sample_IO_1(): void
+    /**
+     * @dataProvider ioProvider
+     */
+    public function testSampleIO(string $input, string $expected): void
     {
-        $input = <<<EOT
-        2
-        EOT;
-        $output = <<<EOT
-        14
-        EOT;
         $stringIo = fopen("data://text/plain,$input", 'r');
-        $this->expectOutputString($output);
+        $this->expectOutputString($expected);
         SampleTest::$sample->solver($stringIo);
     }
 
-    public function test_Sample_IO_2(): void
+    public function ioProvider(): array
     {
-        $input = <<<EOT
+        return [
+            'Sample Input 1' => [
+                <<<EOT
+        2
+        EOT,
+                <<<EOT
+        14
+        EOT
+
+            ],
+            'Sample Input 2' => [
+                <<<EOT
         10
-        EOT;
-        $output = <<<EOT
+        EOT,
+                <<<EOT
         1110
-        EOT;
-        $stringIo = fopen("data://text/plain,$input", 'r');
-        $this->expectOutputString($output);
-        SampleTest::$sample->solver($stringIo);
+        EOT
+            ]
+        ];
     }
 }
