@@ -1,13 +1,13 @@
 import sys
+import task
 import unittest
 from io import StringIO
-from task import solver
 
 class TestClass(unittest.TestCase):
     def assertIO(self, input, output):
         stdout, stdin = sys.stdout, sys.stdin
         sys.stdout, sys.stdin = StringIO(), StringIO(input)
-        solver()
+        task.solver()
         sys.stdout.seek(0)
         out = sys.stdout.read()[:-1]
         sys.stdout, sys.stdin = stdout, stdin
