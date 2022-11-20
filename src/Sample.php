@@ -1,5 +1,7 @@
 <?php
 
+namespace Topsic;
+
 class Sample
 {
     public static function run(): never

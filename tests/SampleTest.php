@@ -1,15 +1,15 @@
 <?php
-require_once 'src\Task.php';
 
 use PHPUnit\Framework\TestCase;
+use Topsic\Sample;
 
-class TaskTest extends TestCase
+class SampleTest extends TestCase
 {
     private static $task;
 
     public static function setUpBeforeClass(): void
     {
-        TaskTest::$task = new Task();
+        SampleTest::$task = new Task();
     }
 
     /**
@@ -19,7 +19,7 @@ class TaskTest extends TestCase
     {
         $stringIo = fopen("data://text/plain,$input", 'r');
         $this->expectOutputString($expected);
-        TaskTest::$task->solver($stringIo);
+        SampleTest::$task->solver($stringIo);
     }
 
     public function ioProvider(): array

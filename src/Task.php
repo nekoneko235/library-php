@@ -1,5 +1,7 @@
 <?php
 
+namespace Topsic;
+
 class Task
 {
     public static function run(): never
