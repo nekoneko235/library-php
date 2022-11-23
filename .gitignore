@@ -1,5 +1,4 @@
 /vendor/
 /.vscode/
-/python/__pycache__/
 composer.json
 composer.lock
