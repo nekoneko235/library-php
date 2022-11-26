@@ -1,9 +1,7 @@
 <?php
 
-function solver($io = STDIN): void
+function solver(mixed $io = STDIN): void
 {
-    $a = trim(fgets($io));
-    echo $a + $a ** 2 + $a ** 3;
 }
 
-// solver();
+solver();
