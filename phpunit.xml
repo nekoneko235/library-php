@@ -2,7 +2,7 @@
 <phpunit colors="true" cacheResult="false">
 	<testsuites>
 		<testsuite name="Test suite">
-			<file>tests/TaskTest.php</file>
+			<file>test/TaskTest.php</file>
 		</testsuite>
 	</testsuites>
 </phpunit>
