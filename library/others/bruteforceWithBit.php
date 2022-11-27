@@ -13,7 +13,6 @@ function bruteforceWithBit(mixed $io = STDIN): void
     $arrQ = explode(" ", trim(fgets($io)));
     $sums = [];
 
-    $ans = false;
     for ($bit = 0; $bit < (1 << $n); $bit++) {
         $sum = 0;
         for ($i = 0; $i < $n; $i++) {
