@@ -13,7 +13,7 @@ function stack($io = STDIN): void
         $arr = explode(" ", trim(fgets($io)));
         switch ($arr[0]) {
             case '2':
-                echo $stack[count($stack) - 1] . "\n";
+                echo end($stack) . "\n";
                 break;
             case '3':
                 array_pop($stack);
