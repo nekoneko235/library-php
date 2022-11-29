@@ -8,7 +8,7 @@ Problem URL: https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_bi
 function AdjacencyList($io = STDIN): void
 {
     list($n, $m) = explode(" ", trim(fgets($io)));
-    $graph = [[]];
+    $graph = [1 => []];
     for ($i = 0; $i < $m; $i++) {
         list($a, $b) = explode(" ", trim(fgets($io)));
         $graph[$a][] = $b;
