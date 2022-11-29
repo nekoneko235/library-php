@@ -1,8 +1,8 @@
 <?php
 
 /*
-Problem Sbj: Adjacent Vertices
-Problem URL: https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_bi
+Problem Sbj: A62 - Depth First Search
+Problem URL: https://atcoder.jp/contests/tessoku-book/tasks/math_and_algorithm_am
 */
 
 function dfs(int $pos, array $graph, array &$visited): void

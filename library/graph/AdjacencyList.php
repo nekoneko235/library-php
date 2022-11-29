@@ -1,7 +1,7 @@
 <?php
 
 /*
-Problem Sbj: Adjacent Vertices
+Problem Sbj: A61 - Adjacent Vertices
 Problem URL: https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_bi
 */
 
