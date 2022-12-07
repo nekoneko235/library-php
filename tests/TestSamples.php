@@ -19,26 +19,29 @@ class TaskTest extends TestCase
         return [
             '入力例_1' => [
                 <<<EOF
-1 2 1 2
+5
+coder
 EOF,
                 <<<EOF
-YES
+2
 EOF
             ],
             '入力例_2' => [
                 <<<EOF
-7 7 7 7
+6
+topsic
 EOF,
                 <<<EOF
-NO
+-1
 EOF
             ],
             '入力例_3' => [
                 <<<EOF
-1 2 3 4
+9
+aabbbcccc
 EOF,
                 <<<EOF
-NO
+3
 EOF
             ],
         ];
