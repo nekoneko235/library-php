@@ -1,6 +1,6 @@
 <?php
 
-function solver(mixed $io = STDIN): void
+function solver($io = STDIN): void
 {
 }
 
