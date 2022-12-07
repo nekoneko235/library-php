@@ -17,14 +17,14 @@ class TaskTest extends TestCase
     public function ioProvider(): array
     {
         $res = $in = $out = [];
-        foreach (new DirectoryIterator("test\io\in") as $file) {
+        foreach (new DirectoryIterator("tests\io\in") as $file) {
             if ($file->isFile()) {
-                $in[] = rtrim(file_get_contents("test\io\in\\" . $file->getFilename()), "\n");
+                $in[] = rtrim(file_get_contents("tests\io\in\\" . $file->getFilename()), "\n");
             }
         }
-        foreach (new DirectoryIterator("test\io\out") as $file) {
+        foreach (new DirectoryIterator("tests\io\out") as $file) {
             if ($file->isFile()) {
-                $out[] = rtrim(file_get_contents("test\io\out\\" . $file->getFilename(), "\n"));
+                $out[] = rtrim(file_get_contents("tests\io\out\\" . $file->getFilename(), "\n"));
             }
         }
         for ($i = 0; $i < count($in); $i++) {
