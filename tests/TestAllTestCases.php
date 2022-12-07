@@ -19,7 +19,7 @@ class TaskTest extends TestCase
         $res = $in = $out = [];
         foreach (new DirectoryIterator("tests\io\in") as $file) {
             if ($file->isFile()) {
-                $in[] = rtrim(file_get_contents("tests\io\in\\" . $file->getFilename()), "\n");
+                $in[] = file_get_contents("tests\io\in\\" . $file->getFilename());
             }
         }
         foreach (new DirectoryIterator("tests\io\out") as $file) {
