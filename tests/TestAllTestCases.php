@@ -10,7 +10,7 @@ class TaskTest extends TestCase
     public function testSampleIO(string $input, string $expected): void
     {
         $stringIo = fopen("data://text/plain,$input", 'r');
-        $this->expectOutputString($expected);
+        $this->expectOutputRegex("/^" . $expected . "(\s+)?$/");
         solver($stringIo);
     }
 
