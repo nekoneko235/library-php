@@ -2,8 +2,8 @@
 <phpunit colors="true" cacheResult="false">
 	<testsuites>
 		<testsuite name="Test suite">
-			<!-- <file>tests/TestSample.php</file> -->
-			<file>tests/TestAllTestCases.php</file>
+			<file>tests/TestSamples.php</file>
+			<!-- <file>tests/TestAllTestCases.php</file> -->
 		</testsuite>
 	</testsuites>
 </phpunit>
