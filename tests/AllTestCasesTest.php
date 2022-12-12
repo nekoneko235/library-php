@@ -16,9 +16,10 @@ class TaskTest extends TestCase
 
     public function ioProvider(): array
     {
-        $res = $in = $out = [];
+        $res = $in = $out = $fileName = [];
         foreach (new DirectoryIterator("tests/io/in/") as $file) {
             if ($file->isFile()) {
+                $fileName[] = $file->getFilename();
                 $in[] = file_get_contents("tests/io/in/" . $file->getFilename());
             }
         }
@@ -28,7 +29,7 @@ class TaskTest extends TestCase
             }
         }
         for ($i = 0; $i < count($in); $i++) {
-            $res[] = [$in[$i], $out[$i]];
+            $res[$fileName[$i]] = [$in[$i], $out[$i]];
         }
         return $res;
     }
