@@ -103,6 +103,9 @@ class MaxSparseTable
         echo $maxSparseTable->queryMax(0, 2) . "\n";
         echo $maxSparseTable->queryMaxIndex(0, 2) . "\n";
 
+        echo $maxSparseTable->queryMax(4, 4) . "\n";
+        echo $maxSparseTable->queryMaxIndex(4, 4) . "\n";
+
         echo $maxSparseTable->queryMax(2, 4) . "\n";
         echo $maxSparseTable->queryMaxIndex(2, 4) . "\n";
     }

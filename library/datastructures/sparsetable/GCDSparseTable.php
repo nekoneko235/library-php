@@ -77,6 +77,7 @@ class GCDSparseTable
         echo $gcdSparseTable->queryGCD(3, 7) . "\n"; // 1
         echo $gcdSparseTable->queryGCD(3, 4) . "\n"; // 6
         echo $gcdSparseTable->queryGCD(6, 7) . "\n"; // 5
+        echo $gcdSparseTable->queryGCD(5, 5) . "\n"; // 51
     }
 }
 
