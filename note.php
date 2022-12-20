@@ -146,3 +146,25 @@ $dy = {1, 1, 0, -1, -1, -1, 0, 1};
 $dx = {0, 1, 0, -1};
 $dy = {1, 0, -1, 0};
 */
+
+/*
+PHPで隣接リストを表現する場合
+$graph = [];
+$graph[1][] = 2;
+$graph[2][] = 1;
+$graph[4][] = 2;
+$graph[2][] = 4;
+$graph[3][] = 2;
+$graph[2][] = 3;
+var_dump($graph);
+
+// $graph2 = [];
+$graph2 = array_fill(1, 4, []);
+array_push($graph2[1], 2);
+array_push($graph2[2], 1);
+array_push($graph2[4], 2);
+array_push($graph2[2], 4);
+array_push($graph2[3], 2);
+array_push($graph2[2], 3);
+var_dump($graph2);
+*/
