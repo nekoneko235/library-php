@@ -11,7 +11,7 @@ function primeFactorization(int $n): array
 
         while ($n % $i === 0) {
             ++$exp;
-            $n /= $i;
+            $n = intdiv($n, $i);
         }
 
         $res[] = [$i, $exp];
@@ -23,37 +23,11 @@ function primeFactorization(int $n): array
 }
 
 print_r(primeFactorization(24));
+print_r(primeFactorization(128));
+print_r(primeFactorization(777));
+print_r(primeFactorization(100000007));
+print_r(primeFactorization(1));
 /*
-arg: 1
-output:
-(
-)
-
-arg: 2
-output:
-Array
-(
-    [0] => Array
-        (
-            [0] => 2
-            [1] => 1
-        )
-)
-
-arg: 17
-output:
-Array
-(
-    [0] => Array
-        (
-            [0] => 17
-            [1] => 1
-        )
-
-)
-
-arg: 24
-output:
 Array
 (
     [0] => Array
@@ -68,5 +42,47 @@ Array
             [1] => 1
         )
 
+)
+Array
+(
+    [0] => Array
+        (
+            [0] => 2
+            [1] => 7
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [0] => 3
+            [1] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => 7
+            [1] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => 37
+            [1] => 1
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [0] => 100000007
+            [1] => 1
+        )
+
+)
+Array
+(
 )
 */
