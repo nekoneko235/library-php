@@ -10,7 +10,7 @@ function enumDivisors(int $n): array
             $res[] = $i;
 
             // add $n/$i if $n/$i !== $i
-            if ($n / $i !== $i) $res[] = $n / $i;
+            if (intdiv($n, $i) !== $i) $res[] = intdiv($n, $i);
         }
     }
 
@@ -19,8 +19,34 @@ function enumDivisors(int $n): array
     return $res;
 }
 
+print_r(enumDivisors(24));
+print_r(enumDivisors(128));
 print_r(enumDivisors(777));
+print_r(enumDivisors(100000007));
+print_r(enumDivisors(1));
 /*
+Array
+(
+    [0] => 1
+    [1] => 2
+    [2] => 3
+    [3] => 4
+    [4] => 6
+    [5] => 8
+    [6] => 12
+    [7] => 24
+)
+Array
+(
+    [0] => 1
+    [1] => 2
+    [2] => 4
+    [3] => 8
+    [4] => 16
+    [5] => 32
+    [6] => 64
+    [7] => 128
+)
 Array
 (
     [0] => 1
@@ -31,5 +57,14 @@ Array
     [5] => 111
     [6] => 259
     [7] => 777
+)
+Array
+(
+    [0] => 1
+    [1] => 100000007
+)
+Array
+(
+    [0] => 1
 )
 */
