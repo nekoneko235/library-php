@@ -20,9 +20,10 @@ function lowerBound(array $arr, int $target): int
 
 $arr = [1, 4, 4, 7, 7, 8, 8, 11, 13, 19];
 
-echo "-----value (Lower bound)-----\n";
-echo $arr[binarySearch($arr, 4)]  . "\n";
-echo $arr[binarySearch($arr, 6)]  . "\n";
-echo $arr[binarySearch($arr, 7)]  . "\n";
-echo $arr[binarySearch($arr, 19)] . "\n";
-echo $arr[binarySearch($arr, 20)] . "\n"; // Undefined array key 10
+print_r($arr);
+echo "-----(Lower bound)-----\n";
+echo "Searched value: 4 / Found key: " . lowerBound($arr, 4) . "\n";
+echo "Searched value: 6 / Found key: " . lowerBound($arr, 6) . "\n";
+echo "Searched value: 7 / Found key: " . lowerBound($arr, 7) . "\n";
+echo "Searched value: 19 / Found key: " . lowerBound($arr, 19) . "\n";
+echo "Searched value: 20 / Found key: " . lowerBound($arr, 20) . "\n";
