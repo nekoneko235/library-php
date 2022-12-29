@@ -20,9 +20,10 @@ function upperBound(array $arr, int $target): int
 
 $arr = [1, 4, 4, 7, 7, 8, 8, 11, 13, 19];
 
-echo "-----value (Upper bound)-----\n";
-echo $arr[binarySearch($arr, 4, false)]  . "\n";
-echo $arr[binarySearch($arr, 6, false)]  . "\n";
-echo $arr[binarySearch($arr, 7, false)]  . "\n";
-echo $arr[binarySearch($arr, 19, false)] . "\n"; // Undefined array key 10
-echo $arr[binarySearch($arr, 20)] . "\n"; // Undefined array key 10
+print_r($arr);
+echo "-----(Upper bound)-----\n";
+echo "Searched value: 4 / Found key: " . upperBound($arr, 4) . "\n";
+echo "Searched value: 6 / Found key: " . upperBound($arr, 6) . "\n";
+echo "Searched value: 7 / Found key: " . upperBound($arr, 7) . "\n";
+echo "Searched value: 19 / Found key: " . upperBound($arr, 19) . "\n";
+echo "Searched value: 20 / Found key: " . upperBound($arr, 20) . "\n";
