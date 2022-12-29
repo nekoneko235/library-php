@@ -9,8 +9,10 @@ class TaskTest extends TestCase
      */
     public function testSampleIO(string $input, string $expected): void
     {
-        $stringIo = fopen("data://text/plain,$input", 'r');
-        $this->expectOutputRegex("/^" . $expected . "(\s+)?$/");
+        $stringIo = fopen('php://memory', 'r+');
+        fwrite($stringIo, $input);
+        rewind($stringIo);
+        $this->expectOutputRegex("/^(\s+)?\Q" . $expected . "\E(\s+)?$/");
         solver($stringIo);
     }
 
@@ -19,29 +21,26 @@ class TaskTest extends TestCase
         return [
             '入力例_1' => [
                 <<<EOF
-1 2
-3 4
+Hello,World!
 EOF,
                 <<<EOF
--2
+AC
 EOF
             ],
             '入力例_2' => [
                 <<<EOF
-0 -1
-1 0
+Hello,world!
 EOF,
                 <<<EOF
-1
+WA
 EOF
             ],
             '入力例_3' => [
                 <<<EOF
-100 100
-100 100
+Hello!World!
 EOF,
                 <<<EOF
-0
+WA
 EOF
             ],
         ];
