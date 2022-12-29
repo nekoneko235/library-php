@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace library\math;
 
 function convertDecimalToBinary(int $n, int $digit): string

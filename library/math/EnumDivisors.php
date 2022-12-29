@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace library\math;
 
 function enumDivisors(int $n): array
