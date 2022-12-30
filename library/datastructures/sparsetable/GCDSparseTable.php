@@ -60,7 +60,7 @@ class GCDSparseTable
         return $this->gcd($this->dp[$p][$l], $this->dp[$p][$r - $k + 1]);
     }
 
-    private function gcd(int $a, int $b): int
+    public function gcd(int $a, int $b): int
     {
         return $b === 0 ? ($a < 0 ? -$a : $a) : $this->gcd($b, $a % $b);
     }
