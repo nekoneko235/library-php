@@ -14,6 +14,8 @@ class TaskTest extends TestCase
         rewind($stringIo);
         $this->expectOutputRegex("/^(\s+)?\Q" . $expected . "\E(\s+)?$/");
         // "Compilation failed"の場合は、OutputRegexの代わりにOutputStringを実行する
+        // その場合、行頭または末尾にホワイトスペースがあるとテストにパスしないが
+        // ジャッジサーバーではACになるので気にしないでおっけー
         // $this->expectOutputString($expected);
         solver($stringIo);
     }
